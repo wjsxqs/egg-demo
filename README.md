@@ -1,5 +1,10 @@
 # egg-demo
 
+mysql数据可测试可用，pg不可用，暂未找到原因
+
+pg报错：
+nodejs.SequelizeDatabaseError: zero-length delimited identifier at or near """"
+
 ## QuickStart
 
 ### Development

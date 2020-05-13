@@ -3,7 +3,7 @@ import { Application } from 'egg';
 export default (app: Application) => {
   const { INTEGER, TEXT, DATE } = app.Sequelize;
 
-  const User = app.model.define('user', {
+  const User = app.model.define('users', {
     id: {
       type: INTEGER,
       primaryKey: true,
@@ -19,6 +19,7 @@ export default (app: Application) => {
   }, {
     timestamps: false,
     freezeTableName: true,
+    tableName: 'users',
   });
 
   return class extends User {};
