@@ -15,8 +15,8 @@ export default class UsersController extends Controller {
         nickname,
         username,
         userrole,
+        password,
       },
-      password,
     );
 
     ctx.body = {

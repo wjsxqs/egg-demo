@@ -15,6 +15,8 @@ import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
 import 'egg-jwt';
+import '@switchdog/egg-graphql';
+import 'egg-cors';
 import 'egg-sequelize';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
@@ -32,6 +34,8 @@ declare module 'egg' {
     jsonp?: EggPluginItem;
     view?: EggPluginItem;
     jwt?: EggPluginItem;
+    graphql?: EggPluginItem;
+    cors?: EggPluginItem;
     sequelize?: EggPluginItem;
   }
 }

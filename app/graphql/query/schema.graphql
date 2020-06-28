@@ -1,0 +1,6 @@
+type Query {
+  # hellos: [Hello!]
+  hellos: String!
+  login(data: Authentication!): Boolean!
+  fetchByUsername(data: Authentication!): User!
+}

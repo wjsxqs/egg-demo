@@ -1,11 +1,11 @@
 {
   "development": {
-    "username": "root",
-    "password": "123456",
+    "username": "hasura",
+    "password": "hasura",
     "database": "egg_demo",
     "host": "127.0.0.1",
-    "port": "3306",
-    "dialect": "mysql"
+    "port": "5432",
+    "dialect": "postgres"
   },
   "test": {
     "username": "root",

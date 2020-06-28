@@ -1,0 +1,39 @@
+# 用户
+type User {
+  # 唯一索引
+  id: ID
+  # 手机号
+  username: String
+  # 昵称
+  nickname: String
+  # 头像
+  userrole: String
+}
+
+type Oauth {
+  # 用户ID
+  user_id: ID
+  # 登陆类型
+  oauth_type: String
+  # 第三方唯一标识
+  oauth_id: String
+}
+
+input Create {
+  nickname: String!
+  username: String!
+  userrole: String!
+  password: String!
+}
+
+input Register {
+  name: String!
+  phone: String!
+  password: String!
+  code: String!
+}
+
+input Authentication {
+  username: String!
+  password: String!
+}

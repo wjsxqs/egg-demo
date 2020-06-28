@@ -22,13 +22,17 @@
     "clean": "ets clean"
   },
   "dependencies": {
+    "@switchdog/egg-graphql": "^3.2.0-beta.4",
     "egg": "^2.6.1",
+    "egg-cors": "^2.2.3",
     "egg-jwt": "^3.1.7",
     "egg-scripts": "^2.6.0",
     "egg-sequelize": "^5.2.1",
+    "graphql": "^15.1.0",
+    "graphql-upload": "^11.0.0",
+    "loadsh": "^0.0.4",
     "mysql2": "^2.1.0",
-    "pg": "^8.1.0",
-    "pg-hstore": "^2.3.3"
+    "pg": "^8.1.0"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",

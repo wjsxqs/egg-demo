@@ -1,6 +1,7 @@
 import { Application } from 'egg';
 
-export default (app: Application) => {
+// export default (app: Application) => {
+module.exports = (app: Application) => {
   const { INTEGER, STRING, DATE, TEXT } = app.Sequelize;
 
   const Config = app.model.define('configs', {
@@ -25,6 +26,6 @@ export default (app: Application) => {
     tableName: 'configs',
   });
 
-  return class extends Config {};
-  // return Config;
+  // return class extends Config {};
+  return Config;
 };

@@ -1,0 +1,4 @@
+type Mutation {
+  create(data: Create!): Boolean!
+  register(data: Register!): User!
+}
